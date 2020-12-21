@@ -1,0 +1,242 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** reset para rems - 62.5% = 10px de 16px**/ 
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/** Globales **/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+img{
+    max-width: 100%;
+}
+/** Utilidades **/
+
+.centrar-texto {
+    text-align: center;
+}
+.contenido-centrado{
+    max-width: 900px;
+}
+/** Header **/
+.site-header.barra{
+    background-color: rgba(256, 60, 0, 0.880);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.site-header.barra img{
+   width: 15rem;
+   height: 15rem;
+   padding: 1rem ;
+}
+/** Navegacion **/
+.nav a{
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+.usuario a, p{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+/** Body **/
+.contenido{
+    background-image: url(../img/carreras-sena.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 65rem;
+    
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+/** enlace **/ 
+.enlace a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+/** botones **/
+.boton input{
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    width: 13rem;
+    height: 4.5rem;
+    background-color: rgba(256, 60, 0, 0.880);
+    border-radius: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+}
+
+
+/** Formulario **/
+.comentario {
+    
+    max-width: 500px;
+    width: 80%;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+legend{
+    font-size: 2.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    
+}
+label {
+    font-weight: 700;
+    display: block;
+    padding: 1rem 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+input:not([type="submit"]), textarea , select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #2F80ED;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align-last: center;
+}
+::placeholder{
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+textarea{
+    height: 15rem;
+}
+.ingresar{
+    width: 80%;
+    padding: 3rem 3rem;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
+/** Footer **/
+
+.footer{
+    background-color: rgba(256, 60, 0, 0.880);
+    padding: 2rem;
+    
+}
+.footer p{
+    color: #ffffff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/** Otras paginas**/
+.cuerpo-formulario{
+    background: #000428;  
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);  
+    background: linear-gradient(to bottom, #004e92, #000428); 
+
+    padding: 2rem;
+}
+/** Pagina  Aprendiz**/
+
+.navegacion{
+    font-size: 2rem;
+    color: black;
+    text-decoration: none;
+    padding-left: 1rem;
+    float: left;
+    width: 20%;
+    border-right:  3px double black;
+    margin-left: 35px;  
+}
+
+.navegacion a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+
+.navegacion a:hover{
+    color: rgba(256, 60, 0, 0.880);
+    transition: all .5s;
+}
+.barra{
+    justify-content: space-between !important; 
+    padding-left: 90px;
+    padding-right: 77px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.Anuncio{
+    background-color: rgb(42, 93, 235);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    margin: 10px 10px 20px 55px;
+    color: #ffffff;
+    width: 200px;
+    font-size: 20px;
+}
+
+.actividad{
+    background-color: rgb(42, 93, 235);
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+    margin-left: 80%; 
+    width: 200px;
+    font-size: 20px;
+    color: white;
+}
+
+.Anuncio2{
+    padding-top: 20px ; 
+    margin-right: 20px; 
+}
+
+.cuerpo{
+    text-align: center;
+    padding: 10px;
+    margin-left: 20%;
+    align-items: center;
+}
+.cuerpo img{
+    height: 400px;
+    width: 590px;
+    padding-bottom: 40px;
+}

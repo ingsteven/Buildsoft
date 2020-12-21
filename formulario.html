@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-header barra">
+            <a href="#">
+                <img src="img/logo sena.png" alt="Logo Sena">
+            </a>
+            <nav class="nav">
+                <a href="index.html">Ingresar</a>
+            </nav>
+        </div>
+    </header>
+    <section class="cuerpo-formulario">
+        <form class="comentario" action="">
+
+            <legend>Datos del Aprendiz</legend>
+
+            
+            <input type="text" id="nombre" placeholder="Nombre" required="required">
+
+            
+            <input type="text" id="apellido" placeholder="Apellido" required="required">
+
+            
+            <input type="text" id="documento" placeholder="Numero de Documento" required="required">
+
+            
+            <input type="email" id="email" placeholder="Correo Electronico" required="required">
+
+            
+            <input type="email" id="carrera" placeholder="Carrera" required="required">
+
+            <p>Elija una Jornada : </p>
+            <select name="devices">
+                <option value="diurna">Diurna</option>
+                <option value="nocturna">Nocturna</option>
+                <option value="fines de semana">Fines de semana</option>
+            </select>
+
+            
+            <textarea id="mensaje"></textarea>
+            <div class="boton">
+                <input type="submit" value="Compartir" onclick="validar()">
+            </div>
+        </form>
+    </section>
+
+    <script type="text/JavaScript" src="/js/main.js"></script>
+
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
+</body>
+
+</html>
