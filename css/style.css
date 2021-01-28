@@ -31,9 +31,9 @@ img{
     align-items: center;
 }
 .site-header.barra img{
-   width: 15rem;
-   height: 15rem;
-   padding: 1rem ;
+   width: 11rem;
+   height: 8rem;
+   margin: 0 0 0 10rem;
 }
 /** Navegacion **/
 .nav a{
@@ -49,11 +49,23 @@ img{
 }
 /** Body **/
 .contenido{
-    background-image: url(../img/carreras-sena.jpg);
-    background-position: center center;
+    background-image: url(../img/people.jpg);
+    background-position: center;
     background-size: cover;
+    position: relative;
     height: 65rem;
-    
+    z-index: 1;
+    flex: 1;
+}
+.contenido::after{
+    content: '';
+    background-color: rgba(0,0,0,.3);
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
 }
 .titulo {
     display: flex;
@@ -61,6 +73,9 @@ img{
     padding-top: 2rem;
     font-size: 1.5rem;
     color: #ffffff;
+    position: relative;
+    z-index: 1;
+    flex: 1;
 }
 /** enlace **/ 
 .enlace a{
@@ -84,7 +99,12 @@ img{
     margin-right: auto;
     text-transform: uppercase;
     color: #ffffff;
-    
+}
+.verde input{
+    background-color: rgba(44, 176, 41, 0.880);
+}
+.verde input:hover{
+    background-color: rgba(38, 160, 36, 0.88);
 }
 
 
@@ -97,6 +117,7 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 legend{
@@ -119,16 +140,16 @@ input:not([type="submit"]), textarea , select{
     padding: 1rem;
     display: block;
     width: 100%;
-    background-color: #2F80ED;
+    /**background-color: #2F80ED;**/
     margin-bottom: 3rem;
     border: none;
     border-radius: 2rem;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #130d0d;
     text-align-last: center;
 }
 ::placeholder{
-    color: #ffffff;
+    color: #000000;
     font-size: 1.5rem;
 }
 textarea{
@@ -141,6 +162,9 @@ textarea{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    z-index: 1;
+    flex: 1;
 }
 
 input[type="submit"]:hover{
@@ -168,6 +192,12 @@ input[type="submit"]:hover{
 
     padding: 2rem;
 }
+/** Pagina  Recuperar contaseña**/
+.recuperarContraseña input{
+    background-color: #ffffff;
+    color: #000428;
+}
+
 /** Pagina  Aprendiz**/
 
 .navegacion{

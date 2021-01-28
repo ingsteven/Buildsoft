@@ -17,42 +17,24 @@
                 <img src="img/logo sena.png" alt="Logo Sena">
             </a>
             <nav class="nav">
-                <a href="index.html">Ingresar</a>
-
+                <a href="index.html">Regresar</a>
             </nav>
         </div>
     </header>
     <section class="contenido">
         <div class="titulo">
-            <h2>Bienvenidos</h2>
+            <h2>Ingresa tu correo Institucional</h2>
         </div>
 
         <form class="ingresar" action="Aprendiz.html">
 
-            <label for="perfi">Seleccione un Perfil</label>
-            <select name="perfil">
-                <option value="instructor">INSTRUCTOR</option>
-                <!--<option value="aprendiz">APRENDIZ</option>-->
-                <option value="administrativo"> ADMINISTRATIVO</option>
-            </select>
-            <label for="username"></label>
-            <input type="text" id="username" placeholder="USUARIO" required="required">
+            <label for="username">Correo</label>
+            <input class="recuperarContraseña" type="text" id="username" required="required">
 
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="CONTRASEÑA" id="password" required="required" />
-            
-            <div class="enlace">
-                <a href="paswordPage.html">¿Olvidaste tu contraseña?</a>
+            <div class="boton verde">
+                <input type="submit" value="enviar" onclick="">
             </div>
-            
-            <div class="boton">
-                <input type="submit" value="iniciar" onclick="iniciosesion()">
-            </div>
-            <!--
-            <div class="enlace">
-                <a href="formulario.html">Crear Cuenta</a>
-            </div>
-            -->
+
         </form>
     </section>
 
