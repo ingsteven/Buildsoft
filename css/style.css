@@ -173,11 +173,13 @@ input[type="submit"]:hover{
 /** Footer **/
 
 .footer{
+    display: inline-block;
     background-color: rgba(256, 60, 0, 0.880);
     padding: 2rem;
-    
+    width: 100%;
 }
 .footer p{
+    
     color: #ffffff;
     font-size: 1.2rem;
     display: flex;
@@ -232,15 +234,17 @@ input[type="submit"]:hover{
     font-size: 17px;
 }
 
+
 .Anuncio{
+
     background-color: rgb(42, 93, 235);
     border-radius: 20px;
     border: none;
     padding: 15px;
-    margin: 10px 10px 20px 55px;
+    margin: 10px 10px 20px 10px;
     color: #ffffff;
-    width: 200px;
-    font-size: 20px;
+    
+    font-size: 10px;
 }
 
 .actividad{
@@ -254,19 +258,56 @@ input[type="submit"]:hover{
     color: white;
 }
 
-.Anuncio2{
-    padding-top: 20px ; 
-    margin-right: 20px; 
-}
-
 .cuerpo{
+    position: relative;
     text-align: center;
     padding: 10px;
     margin-left: 20%;
     align-items: center;
+    width: 80%;
+    
 }
 .cuerpo img{
     height: 400px;
     width: 590px;
     padding-bottom: 40px;
+}
+
+
+
+/*consultar usuarios**/
+.cuerpoBusqueda{
+    
+    width: 90%;
+    display: inline-block;
+    padding:1%;
+    margin: 0;
+
+}
+.consultaNumero{
+    width: 80%;
+    display: inline-block;    
+}
+
+.botonConsultar{
+    display: inline-block;    
+    width: 15%;
+}
+#NumeroDocumento{
+    border-radius: 20px ;
+    border: solid 1px;
+    
+}
+.tablaUsuarios{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: inline;
+}
+table{
+    
+    width: 90%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150%;
+    
 }
