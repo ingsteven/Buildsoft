@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AgregarUsuario</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    
+        <header class="site-header barra">
+            <div class="sena">
+                <img src="img/logo sena.png" alt="logo sena">
+            </div>
+            <div class="usuario">
+                <a href="#">Mi Perfil</a>
+                <P>Pepito Perez Cruz</P>
+            </div>
+        </header>
+        <section class="contenido-aprendiz">
+            <div class="navegacion">
+                <nav>
+                    <a href="#">Historial</a>
+                    <a href="#">Novedad</a>
+                    <a href="#">Usuarios</a>
+                    <a href="#">Buscar</a>
+                    <a href="#">Agregar</a>
+                    <a href="#">Actualizar</a>
+                    <a href="#">Roles</a>
+                    <a href="#">Documentos y Actas</a>
+                    <br>
+    
+                    <a href="index.html">Salir</a>
+                </nav>
+            </div>
+           
+           
+    </header>
+    <section class="cuerpo-formulario">
+        
+            <form class="comentario" action="">
+
+            <legend>AGREGAR NOVEDAD </legend>
+            
+            <p> Tipo de Documento </p>
+            <select name="devices">
+                <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+                <option value="Cedula de Ciudadania">Cedula de Ciudadania</option>
+                <option value="Cedula de Extranjeria">Cedula de Extranjeria</option>
+                <option value="Pasaporte">Pasaporte</option>
+            
+                
+            </select>
+            
+            <input type="number" id="Documento del Aprendiz" placeholder="Documento del Aprendiz" required="required">
+
+            
+            <input type="text" id="Nombre Aprendiz" placeholder="Nombre Aprendiz" required="required">
+
+            
+            <input type="text" id="Apellidos Aprendiz" placeholder="Apellidos Aprendiz" required="required">
+
+            <input type="number" id="Ficha" placeholder="Ficha" required="required">
+
+            <p> Trimestre </p>
+            <select name="devices">
+                <option value="Primero">Primero</option>
+                <option value="Segundo">Segundo</option>
+                <option value="Tercero">Tercero</option>
+                <option value="Cuarto">Cuarto</option>
+                <option value="Quinto">Quinto</option>
+                <option value="Sexto">Sexto</option>
+                <option value="Septimo">Septimo</option>
+                <option value="Octavo">Octavo</option>
+            
+                
+            </select>
+            <p> Tipo de Novedad </p>
+            <select name="devices">
+                <option value="Academica">Academica</option>
+                <option value="Disciplinaria">Disciplinaria</option>
+        
+            </select>
+                
+            </select>
+           
+            <input type="date" id="Fecha Creacion" placeholder="Fecha Creacion" required="required">
+
+            <p>Estado </p>
+            <select name="devices">
+                <option value="Activa">Activa</option>
+                <option value="Inactiva">Inactiva</option>
+            
+                
+            </select>
+<input type="text" id="Descripcion de Novedad" placeholder="Descripcion de Novedad" required="required">
+            <div class="Anuncio2">
+            
+                </div>
+            </div>
+            <div class="boton">
+                <input type="submit" value="Agregar" onclick="validar()">
+            </div>
+            </form>
+    </section>
+
+
+    <footer class="footer">
+        <p>
+            Todos los derechos 2017 SENA -Politicas de privacidad y condiciones
+            de uso Portal Web SENA Politica de tratamiento para Portección Datos Personales -
+            Política de seguridad y prívacidad de información.
+        </p>
+    </footer>
+</body>
+
+</html>
