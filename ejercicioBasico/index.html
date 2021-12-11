@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com.co/" onclick="return confirmar()">Enlace para ir al sitio</a> 
+    <!--crear una etiqueta a enla cual enruta el contenido de href, pero primero abre la funcion confirmar por la option onclick -->
+
+    <script>
+        alert("Bienvenido a la página") // imprime un mensaje en el alert 
+    </script>
+    <script>
+        var nombre; // crea una variable llamada nombre
+        nombre=prompt("Escribe tu nombre",""); // asigna ala variable nombre y almacena un dato en la variable nombre
+        alert("Mucho gusto "+ nombre); // impreme un mensaje alert mas el valor de la variable nombre
+       console.log(nombre); // visualiza el volor de la  variable nombre en consola
+    </script>
+    <script>
+        function confirmar(){
+            return confirm("Es contenido es para mayores de 18 años, lo cumple?") // impreme un mensaje falso o verdadero
+        }
+    </script>
+</body>
+</html>

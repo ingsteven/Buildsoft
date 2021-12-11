@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Suma De Dos Numeros</title>
+</head>
+<body>
+
+    <form action=""> <!--form es un formulario, action es la acion que hace--> 
+        <input type="text" id="numero1"> <!--input son entradas para html-->
+        <input type="text" id="numero2">
+        <input type="button" value="suma" onclick="alert( suma());"> <!--input de tipo button que va a tener un volor llamado suma que va a tener la accion  de llamar la funcion suma-->
+
+    </form>
+<script>
+    alert("Bienvenido A la Aplición Digita Dos Números Para Sumar") // imprimir un mensaje
+</script>
+<script>
+
+    var suma = function (numero1, numero2){  // declarar la variable suma que es una funcion que recibe el iadi numero 1 y ID numero 2
+        var numero1= parseFloat(document.getElementById("numero1").value); // se llama una acion de comvertir a float decimales
+        var numero2= parseFloat(document.getElementById("numero2").value);
+
+        var resultado = numero1 + numero2;
+        return resultado;
+        console.log(numero1,numero2); 
+    }                                   
+                                       
+</script>
+    
+      
+
+      
+</body>
+</html>
