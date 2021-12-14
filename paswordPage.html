@@ -47,6 +47,52 @@
             Política de seguridad y prívacidad de información.
         </p>
     </footer>
+
 </body>
 
 </html>
+
+ if (List_empresas.SelectedValue == "1" && Txt_fecha_inicio.Value != "" && Txt_fecha_fin.Value != "")
+                            {
+
+
+                                List<Visualizar_Tickets> Visualizar_Actas = Gestion_Datos.listar_Actas_por_fechas_consultor(fecha_inicio, fecha_fin, List_agente.SelectedValue);
+
+                                if (Visualizar_Actas.Count != 0)                  //Me confronta si el select del metodo listar_Tickets_por_Estado_empresa
+                                                                                  //me trae campos o datos de la tabla tickets de no ser asi el valor se comvierte en 0 con tipo count = 0
+                                {                                                    //encapsulado en la variable visualizar_Tickets y count es diferente a 0 se carga la grilla con los  
+                                                                                     //registros encontrados si no se genera alerta de no se encontraron registros
+                                    Grilla_actas.DataSourceID = "";
+                                    Grilla_actas.DataSource = Visualizar_Actas;
+                                    Grilla_actas.DataBind();
+
+                                }
+                                else
+                                {
+
+                                    ScriptManager.RegisterStartupScript(this, GetType(), "", "alert(' No se encontraron actas registrasdas en el rango de fecha seleccionado y el agente seleccionado');", true);
+                                }
+                            }
+                            else
+                            {
+                                if (List_agente.SelectedValue != "1" && Txt_fecha_inicio.Value != "" && Txt_fecha_fin.Value != "")
+                                {
+
+                                    List<Visualizar_Tickets> Visualizar_Actas = Gestion_Datos.listar_Actas_por_fechas_empresa_consultor(fecha_inicio, fecha_fin, List_agente.SelectedValue, List_empresas.SelectedValue);
+
+                                    if (Visualizar_Actas.Count != 0)                  //Me confronta si el select del metodo listar_Tickets_por_Estado_empresa
+                                                                                      //me trae campos o datos de la tabla tickets de no ser asi el valor se comvierte en 0 con tipo count = 0
+                                    {                                                    //encapsulado en la variable visualizar_Tickets y count es diferente a 0 se carga la grilla con los  
+                                                                                         //registros encontrados si no se genera alerta de no se encontraron registros
+                                        Grilla_actas.DataSourceID = "";
+                                        Grilla_actas.DataSource = Visualizar_Actas;
+                                        Grilla_actas.DataBind();
+
+                                    }
+                                    else
+                                    {
+
+                                        ScriptManager.RegisterStartupScript(this, GetType(), "", "alert(' No se encontraron actas registrasdas de la empresa seleccionada, el agente selecionado y el rango de fecha seleccionado');", true);
+                                    }
+                                }
+                            }
