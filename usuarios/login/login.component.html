@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aprendices</title>
+    <link href="../../bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-5/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="login.component.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+  <div class="container d-flex justify-content-center mt-5">
+    <div class="card ">
+      <div class="card-header">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/login">Iniciar Sesión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/registro">Crear Cuenta</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="card-body text-center ">
+        <form method="post">
+          <div class="form-group mt-4">
+            <input type="text" class="form-control" [(ngModel)]="usuario.mail" name="mail" id="mail" placeholder="Email"
+              autofocus required>
+          </div>
+          <div class="form-group mt-4">
+            <input type="password" class="form-control" [(ngModel)]="usuario.password" name="password" id="password"
+          placeholder="password" required>
+          </div>
+          <div class="form-group mt-4">
+            <input type="submit" (click)="login()" class="btn btn-lg btn-primary btn-block " value="Iniciar sesion">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+   <script src="../../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+

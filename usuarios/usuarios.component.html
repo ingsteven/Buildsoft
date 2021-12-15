@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aprendices</title>
+  <link href="../bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../bootstrap-5/css/bootstrap-grid.min.css" rel="stylesheet">
+  <link href="usuarios.component.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div class="m-0 row justify-content-center align-items-center">
+    <div class="col-auto">
+      <div class="card mb-3 col-auto">
+        <!-- style="max-width: 18rem;" -->
+        <div class="card-header">Usuarios</div>
+        <div class="card-body text-primary">
+          <h5 class="card-title">Listado Usuarios</h5>
+          <div class="my-3 text-left">
+            <button class="btn btn-rounded btn-primary" type="button" [routerLink]="['/usuarios/formulario']">Crear
+              Usuario</button>
+          </div>
+
+
+          <table class="table table-bordered table-striped mx-auto d-block" *ngIf="usuarios?.length > 0">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Documento</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>cargo</th>
+                <th>sede</th>
+                <th>editar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let usuario of usuarios">
+                <td><link rel="stylesheet" href="detalleUser/detalleUser.component.html"><button  class="btn btn-success">ver</button></td>
+                <td data-label="Documento">6465466</td>
+                <td data-label="Nombre">santiago alfredo</td>
+                <td data-label="Apellidos">mateus silva</td>
+                <td data-label="Email">santiagos@gmail.com</td>
+                <td data-label="Cargo">instructor</td>
+                <td data-label="Sede">ceet</td>
+                
+                <td data-label="Editar"><button type="button" 
+                    class="btn btn-primary">Editar</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+  <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

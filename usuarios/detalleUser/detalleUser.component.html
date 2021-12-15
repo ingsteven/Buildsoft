@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aprendices</title>
+    <link href="../../bootstrap-5/css/bootstrap.min.css" rel="stylesheet">
+    <link href=".l./../bootstrap-5/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="detalleUser.component.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="abrir-modal animacion fadeIn" *ngIf="modalUserService.modalUser">
+    <div class="modal" tabindex="-1" style="display: block;">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ titulo}}</h5>
+            <button (click)="cerrarModal()" type="button" class="btn-close" data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <ul *ngIf="usuario" class="list-group text-dark mb-3"> 
+                    <li class="list-group-item active"><h6>Nombre: </h6>santiago</li>
+                    <li class="list-group-item "><h6>documento n°: </h6>21212121</li>
+                    <li class="list-group-item"><h6>Apellido: </h6>alfredo</li>
+                    <li class="list-group-item"><h6>Email: </h6>santoago@gmail.com</li>
+                    <li class="list-group-item"><h6>cargo: </h6>instructor</li>
+                    <li class="list-group-item"><h6>sede: </h6>ceet</li>
+                  </ul>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button (click)="cerrarModal()" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
+   <script src="../../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
